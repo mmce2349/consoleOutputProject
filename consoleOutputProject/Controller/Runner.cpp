@@ -12,11 +12,13 @@ int main()
 {
     Controller app;
     app.start();
-    
-    cout << "Mitch McEntire" << endl;
+    int *myPointer;
+    string name = "Mitch McEntire";
+    cout << name << endl;
     for (int index = 12; index < 31; index++)
     {
         cout << "This loop has executed " << index + 1 << " times" << endl;
     }
-    
+    *myPointer = 18;
+    cout << *myPointer << "is the address of my name" << "and thats cool." << endl;
 }
