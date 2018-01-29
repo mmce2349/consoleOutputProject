@@ -14,21 +14,25 @@ Controller :: Controller()
     vector <int> firstAttempt;
     vector <int> :: iterator i;
     vector <int> :: reverse_iterator ir;
-    
+    firstAttempt.push_back(5);
     for (int i =1; i<= 5; i++)
         firstAttempt.push_back(i);
     
     
-    cout << "OutPut of begin and end\t:\t";
+    cout << "OutPut of begin and end\t:\t" ;
+    for (auto i = firstAttempt.begin(); i != firstAttempt.end(); ++i)
+        std::cout << *i << ' ';
     
     vector <string> stringVector;
     stringVector.push_back("monday");
     stringVector.push_back("tuesday");
-   
-//    for(int i = 0; i < stringVector.length(); i++)
-//    {
-//        cout << stringVector[i] << endl;
-//    }
+   stringVector.push_back("wednesday");
+    stringVector.push_back("thursday");
+    stringVector.push_back("friday");
+    stringVector.push_back("saturday");
+    stringVector.push_back("sunday");
+    for (auto i = stringVector.begin(); i != stringVector.end(); ++i)
+        std::cout << *i << ' ';
     
 }
 
