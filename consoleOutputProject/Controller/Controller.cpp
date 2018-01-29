@@ -43,4 +43,13 @@ void Controller :: start()
         cout << "This loop has executed " << index + 1 << " times" << endl;
     }
     
+    int funArray [5] = { 16, 18, 19, 30, 57};
+    double trickyArray [3] = {3.4, 4.5, 6.8888};
+    string wordyArray [4] = {"bob", "bill", "gir", "uno"};
+    
+    cout << funArray;
+    cout <<trickyArray;
+    cout << wordyArray;
+    
+    
 }
